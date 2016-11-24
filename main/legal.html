@@ -1,48 +1,20 @@
-<!--
-  2.- HTML LINKS:
 
-  The URL structure contains 3 parts:
-    - Protocol.
-    - Domain.
-    - HTMl file.
-
-    When i put an URL in the browser i send a request and the server sends
-    to me the code of the page.
-
-    Linking just consists in an URL inside the HTML code file.
-
-    In order to create an HTML link we use "a" tag. We need to set a name
-    and the URL we want to open after click on the link. The requested
-    URL is specified by an attribute of the tag, this attribute is "href"
-    and it is placed in the opening of the 'a' tag after the a.
-
-    Target attribute sets where the new page should be open (new tab,
-    another browser,...).
-    "_blank" will open a new empty tab.
-    "_self" will replace the actual page with the new one.
-    If there is not a target specification "_self" is the default target.
-
-    Example: <a href=https://anywhere.com/index.html target="_self">Link anywhere</a>
-
-    There are two types of links:
-      - Absolute paths: the previous. Always includes the protocol and server.
-        This metod is necesary when we need an external pages.
-      - Relative paths: just ask for a file with a relative path. Tis links must
-      be used when the requested file is in the same web site.
--->
 <!DOCTYPE html>
 <html>
 <head>
+  <title>My webpage - Legal</title>
 </head>
 <body>
-<h1>Jose Ignacio García</h1>
+<h1 title="Jose Ignacio Garcia">Jose Ignacio García</h1>
 <u>
-  <li><a href= home.html>Home</a></li>
-  <li><a href= cv.html>CV</a></li>
-  <li><a href= contact.html>Contact</a></li>
-  <li><a href= legal.html>Legal</a></li>
+  <li><a href= home.html title="Home">Home</a></li>
+  <li><a href= cv.html title="Check my CV">CV</a></li>
+  <li><a href= contact.html title="Check my contact">Contact</a></li>
+  <li><a href= legal.html title="Legal info">Legal</a></li>
+  <li><a href= try.html title="just a foo page for try things">Try</a></li>
 </u>
-<p>The prupose of this web page is study web tecnology only.
+<hr>
+<p>The prupose of this web page is study web development only.
   This page is under GNU GPL license, check this <a href=https://es.wikipedia.org/wiki/Software_libre#Licencias_GPL target="_blank">link</a> for more information.
 </p>
 </body>
