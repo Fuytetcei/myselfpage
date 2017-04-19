@@ -35,5 +35,34 @@
 
 <p>This is <sup>subscripted</sup> text.</p>
 
+<!-- attached script -->
+<script src="../js/testFunctions.js"></script>
+
+<!-- Button to alternate text -->
+<p id="test">myFunction1</p>
+<button type="button"
+        onclick='myFunction3()'>Alterna</button>
+<script>
+function myFunction1 () {
+  document.getElementById("test").innerHTML = "myFunction1";
+  console.log("myFunction1");
+}
+function myFunction3() {
+  if (document.getElementById("test").innerText == "myFunction1")
+    myFunction2();
+  else
+    myFunction1();
+  console.log("myFunction3");
+}
+</script>
+
+<!-- Button to add 1 mod 10 -->
+<p id="cont">0 mod 10</p>
+<button type="button"
+        onclick='sumaModDiez()'>Suma</button>
+
+<!-- Alert window button -->
+<button onclick="testAlertWindow()">Window</button>
+
 </body>
 </html>
